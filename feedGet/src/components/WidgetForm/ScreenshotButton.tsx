@@ -21,9 +21,6 @@ export function ScreenshotButton({
     const canvas = await html2canvas(document.querySelector('html')!);
     const base64image = canvas.toDataURL('image/png');
 
-
-    console.log(base64image);
-
     onScreenshotTook(base64image);
     setIsTakinScreenshot(false);
   }
@@ -35,7 +32,7 @@ export function ScreenshotButton({
         className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-colors"
         onClick={() => onScreenshotTook(null)}
         style={{
-          backgroundImage: `url${screenshot}`,
+          backgroundImage: `url(${screenshot})`,
           // deletar estas 2 linhas abaixo quando tiver funcional o widget em um site Real
           backgroundPosition: 'right bottom',
           backgroundSize: 180,
