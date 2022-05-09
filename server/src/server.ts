@@ -6,7 +6,7 @@ const app = express();
 const port = 3333;
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'https://widget-feedback-psi.vercel.app/'
 }));
 
 app.use(express.json());
