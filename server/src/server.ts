@@ -13,6 +13,6 @@ app.use(express.json());
 
 app.use(routes);
 
-app.listen(port, () => {
-  console.log(`⚡Server running in http://localhost:${port}`);
+app.listen(process.env.PORT || port, () => {
+  console.log(`⚡Server running in http://localhost:${process.env.PORT || port}`);
 });
