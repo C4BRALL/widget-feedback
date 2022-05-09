@@ -5,9 +5,7 @@ import { routes } from './routes';
 const app = express();
 const port = 3333;
 
-app.use(cors({
-  origin: 'https://widget-feedback-psi.vercel.app/'
-}));
+app.use(cors());
 
 app.use(express.json());
 
