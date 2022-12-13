@@ -16,6 +16,12 @@ em seguida rode o camando:
   npm run dev
 ```
 
+Para rodar os testes da aplicação back end:
+
+```bash
+  npm run test
+```
+
 ## Para roda o front da aplicação na máquina local:
 
 primeiro rode o comando dentro do diretório /feedget:
@@ -28,12 +34,6 @@ em seguida rode o camando:
 
 ```bash
   npm run dev
-```
-
-Para rodar os testes da aplicação back end:
-
-```bash
-  npm run test
 ```
 
 Agora é possível utilizar a aplicação
